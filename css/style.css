@@ -1,0 +1,203 @@
+@font-face{
+
+font-family: 'Roboto-Regular';
+
+src: url('../css/Roboto-Regular.woff');
+    
+font-weight: normal;
+
+font-style: normal;
+}
+
+@font-face{
+
+font-family: 'Roboto-Light';
+
+src: url('../css/Roboto-Light.woff');
+    
+font-weight: normal;
+
+font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto-Regular';
+}
+input{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    outline: none;
+}
+input:focus{
+    border: 2px solid rgba(0, 198, 0, 0.67);
+}
+textarea:focus{
+    border: 1px solid rgba(0, 198, 0, 0.67);
+}
+
+button {
+    width: 100%;
+}
+textarea{
+    outline: none;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.create{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_name{margin-right: 10px;}
+
+.model_form{
+    margin-top: 50px;
+    background-color: rgb(239, 239, 239);
+    width: 30%;
+    border-radius: 10px;
+    padding: 0 0 10px 10px;
+}
+
+.create_board{
+    height: 210px;
+}
+h2,h5{
+    text-align: center;
+    margin: 12px 0;
+    color: #559ef4;
+}
+h5{
+    color: #f5faff;
+    font-family: Roboto-Light;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+#createBoard, #createCard{
+    padding: 10px;
+}
+.boards{
+        display: flex;
+    flex-wrap: wrap;
+        justify-content: space-around;
+
+
+}
+.board{
+    width: 20.1%;
+    margin-bottom: 20px;
+    background-color: #559ef4;
+    border-radius: 7px;
+    padding: 10px 10px 50px 10px;
+    position: relative;
+  
+}
+
+.card {
+    background: #fff;
+    padding: 5px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.card .description{
+   margin-top: 5px;
+   color:#222;
+   font-size:12px;
+}
+.hidden{
+    display: none;
+}
+
+.select {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.select .custom_input{
+    width: 100%;
+    border: 1px solid #cccc;
+    background: #ffff;
+    box-sizing: border-box;
+    padding: 5px;
+    
+}
+
+.select .select_list{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border: 1px solid #cccc;
+    background: #ffff;
+    list-style: none;
+}
+
+.select .select_list li{
+    padding: 5px;
+    border-top: none;
+    border: 1px solid #cccc;
+}
+
+.select .select_list li:hover {
+    background: #559ef4;
+    color: #ffff;
+    padding-left: 7px;
+    
+}
+
+.fix_btn {
+    cursor: pointer;
+    background: #559ef4;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    border-radius: 5px;
+}
+
+.model_form {
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    top: 100px;  
+    z-index: 2;
+}
+
+.model_form .wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.add-btn {
+    margin-top: 10px auto;
+    background: #b1ffff;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.close-btn{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 5px;
+    top: 0px;
+    background: url(../img/cancel.svg);
+    background-size:cover;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+      
+    <div class="create">
+        <div class="hidden model_form" id="edit_card" data-id="">
+         <div class="wrapper">
+                <div class="close-btn"></div>
+                <h2>Редактирование карты</h2> 
+                <input type="text" class="card_name" placeholder="Введите название карты"> 
+                
+                <div class="form_item">
+                    <div class="select selectBoard">
+                        <input type="hidden" class="card_id">
+                        <div class="custom_input">Выбор доски</div>
+                        <ul class="select_list hidden"></ul>
+                    </div>
+                </div>
+                
+
+                <textarea name="description" class="card_description" placeholder="Введите описание" cols="30" rows="4"></textarea> 
+                <button id='editCard'>Сохранить карту</button>
+            </div>
+        </div>
+
+        <div class="hidden model_form" id="create_card">
+                <div class="wrapper">
+                       <div class="close-btn"></div>
+                       <h2>Создание карты</h2> 
+                       <input type="text" class="card_name" placeholder="Введите название карты"> 
+                       
+                       <div class="form_item hidden">
+                           <div class="select selectBoard">
+                               <input type="hidden" class="card_id">
+                               <div class="custom_input">Выбор доски</div>
+                               <ul class="select_list hidden"></ul>
+                            </div>
+                       </div>
+       
+                       <textarea name="description" class="card_description" placeholder="Введите описание" cols="30" rows="4"></textarea> 
+                       <button id='createCard'>+ Создать карту</button>
+                   </div>
+                </div>
+
+        <div class="showModel fix_btn">+ Создать доску</div>
+        <div class="hidden model_form" id="create_board">
+                <div class="wrapper">
+                        <div class="close-btn"></div>
+                <h2>Создание доски</h2>
+                <input type="text" class="board_name" placeholder="Введите название доски"> <br/>
+                <button id='createBoard'>Создать доску</button>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+            <h2>Доски</h2>
+
+    <h5 class="nn"></h5>
+    
+    
+    <div id="app" class="boards">
+        
+    </div>
+    
+   <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
